@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class MySplashPage extends StatefulWidget {
@@ -14,10 +13,10 @@ class _MySplashPageState extends State<MySplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(24, 24, 24, 100),
+      backgroundColor: const Color.fromRGBO(24, 24, 24, 100),
       body: SafeArea(
         child: Container(
-          padding: EdgeInsets.fromLTRB(20, 20, 20, 20),
+          padding: const EdgeInsets.fromLTRB(20, 20, 20, 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -32,7 +31,7 @@ class _MySplashPageState extends State<MySplashPage> {
                 ),
               ),
               Container(
-                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
                   child: SvgPicture.asset(
                     'assets/images/11.svg',
                     width: 250,
@@ -51,7 +50,7 @@ class _MySplashPageState extends State<MySplashPage> {
                           fontWeight: FontWeight.w900),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   Container(
@@ -64,7 +63,7 @@ class _MySplashPageState extends State<MySplashPage> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   Container(
