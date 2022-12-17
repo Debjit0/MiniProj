@@ -1,4 +1,4 @@
-#Thu Dec 15 22:31:17 IST 2022
+#Sat Dec 17 12:10:51 IST 2022
 base.0=/Users/debjitsarkar/flutter apps/mini_proj/MiniProj/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

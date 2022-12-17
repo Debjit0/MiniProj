@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mini_proj_expense/pages/categoryscreen.dart';
 import 'package:mini_proj_expense/pages/splash.dart';
 
 void main() {
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: const MySplashPage(),
+      initialRoute: CategoryScreen.name,
+      routes: {
+        CategoryScreen.name: (context) => const CategoryScreen(),
+      },
     );
   }
 }
