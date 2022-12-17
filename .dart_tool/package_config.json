@@ -44,6 +44,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dependencies",
+      "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/dependencies-0.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "disposables",
+      "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/disposables-0.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.3.1",
       "packageUri": "lib/",
@@ -212,6 +224,12 @@
       "languageVersion": "2.14"
     },
     {
+      "name": "quiver",
+      "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.1.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///Users/debjitsarkar/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -222,6 +240,18 @@
       "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.9.0",
       "packageUri": "lib/",
       "languageVersion": "2.14"
+    },
+    {
+      "name": "sqflite",
+      "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "sqflite_common",
+      "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.4.0+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "stack_trace",
@@ -240,6 +270,12 @@
       "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "synchronized",
+      "rootUri": "file:///Users/debjitsarkar/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-3.0.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "term_glyph",
@@ -290,7 +326,7 @@
       "languageVersion": "2.18"
     }
   ],
-  "generated": "2022-12-15T16:58:48.574790Z",
+  "generated": "2022-12-17T17:42:04.823536Z",
   "generator": "pub",
   "generatorVersion": "2.18.5"
 }

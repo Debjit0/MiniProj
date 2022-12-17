@@ -28,6 +28,6 @@ class ExpenseCategory {
       };
 
   //we need a method to convert this MAP to a MODEL so that it can be inserted into a database
-  factory ExpenseCategory.fromString(Map<String, dynamic> value) => ExpenseCategory(title: value['title'], entries: value['entries'], totalAmount: int.parse(value['totalAmount']), icon: icon)
+  factory ExpenseCategory.fromString(Map<String, dynamic> value) => ExpenseCategory(title: value['title'], entries: value['entries'], totalAmount: int.parse(value['totalAmount']), icon: icon);
   };
 }
