@@ -2,8 +2,8 @@
 //every expemse will have a category that it belongs to
 
 import 'dart:math';
-
 import 'package:flutter/material.dart';
+import 'package:mini_proj_expense/constants/icons.dart';
 
 class ExpenseCategory {
   final String title; //name of category
@@ -28,6 +28,11 @@ class ExpenseCategory {
       };
 
   //we need a method to convert this MAP to a MODEL so that it can be inserted into a database
-  factory ExpenseCategory.fromString(Map<String, dynamic> value) => ExpenseCategory(title: value['title'], entries: value['entries'], totalAmount: int.parse(value['totalAmount']), icon: icon);
-  };
+  factory ExpenseCategory.fromString(Map<String, dynamic> value) =>
+      ExpenseCategory(
+          title: value['title'],
+          entries: value['entries'],
+          totalAmount: int.parse(value['totalAmount']),
+          //icon values will be fetched from
+          icon: icons[value['Title']]!);
 }

@@ -1,3 +1,4 @@
+import 'package:mini_proj_expense/constants/icons.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
@@ -26,9 +27,9 @@ class DatabaseProvider {
   // _createDb method
   static const cTable = 'categoryTable';
   static const eTable = 'expenseTable';
-  Future<void> _createDb(Database db, int version) async{
+  Future<void> _createDb(Database db, int version) async {
     //this method only runs on database creation
-    await db.transaction((txn) async{
+    await db.transaction((txn) async {
       //category table
       await txn.execute('''CREATE TABLE $cTable(
         title TEXT,
@@ -36,8 +37,19 @@ class DatabaseProvider {
         totalAmount TEXT
       )''');
       //expense table
-      await txn.execute('''CREATE TABLE''');
+      await txn.execute('''CREATE TABLE $eTable(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        title TEXT,
+        amount TEXT,
+        date TEXT,
+        category TEXT
+      )''');
+
+      //insert the initial categories
+      for (int i = 0; i < icons.length; i++) {
+        await txn.insert(cTable, {'title': icons[i]});
+      }
     });
-  };
+  }
 }
 //13:39
