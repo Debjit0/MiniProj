@@ -1,10 +1,11 @@
+import 'package:flutter/material.dart';
 import 'package:mini_proj_expense/constants/icons.dart';
 import 'package:mini_proj_expense/models/ex_category.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import './ex_category.dart';
 
-class DatabaseProvider {
+class DatabaseProvider extends ChangeNotifier{
   //stored in ram for holding Expense categories
   List<ExpenseCategory> _categories = [];
   List<ExpenseCategory> get categories => _categories;
