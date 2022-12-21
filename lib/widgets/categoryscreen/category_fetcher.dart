@@ -26,7 +26,35 @@ class _CategoryFetcherState extends State<CategoryFetcher> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return FutureBuilder(
+      future: _categoryList,
+      builder: (_, snapshot) {
+        if (snapshot.connectionState == ConnectionState.done) {
+          //if connection is done then check for results and wait for results
+          if (snapshot.hasError) {
+            return Center(
+              child: Text(snapshot.error.toString()),
+            );
+          } else {
+            return Consumer<DatabaseProvider>(
+              builder: (_, db, __) {
+                //get the categories
+                var list = db.categories;
+                return ListView.builder(
+                  itemCount: list.length,
+                  itemBuilder: (_, i) => ListTile(
+                    title: Text(list[i].title),
+                  ),
+                );
+              },
+            );
+          }
+        } else {
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        }
+      },
+    );
   }
 }
-//21:35

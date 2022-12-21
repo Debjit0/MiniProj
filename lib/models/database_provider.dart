@@ -5,7 +5,7 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import './ex_category.dart';
 
-class DatabaseProvider extends ChangeNotifier{
+class DatabaseProvider with ChangeNotifier {
   //stored in ram for holding Expense categories
   List<ExpenseCategory> _categories = [];
   List<ExpenseCategory> get categories => _categories;
@@ -40,7 +40,7 @@ class DatabaseProvider extends ChangeNotifier{
       //category table
       await txn.execute('''CREATE TABLE $cTable(
         title TEXT,
-        entries INTEGER
+        entries INTEGER,
         totalAmount TEXT
       )''');
       //expense table
